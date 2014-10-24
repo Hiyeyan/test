@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@android:color/background_light">
+    <ImageButton android:id="@+id/imageButtonUp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_above="@+id/imageButtonUp"
+                 android:layout_width="50dp"
+                 android:layout_height="80dp"
+                 android:src="@drawable/button_up"
+                 android:layout_alignParentTop="true" />
+    <ImageButton android:id="@+id/imageButtonLeft"
+                 android:layout_width="80dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/button_left"
+                 android:layout_toLeftOf="@+id/imageButtonUp"
+                 android:layout_below="@+id/imageButtonUp"/>
+    <ImageButton android:id="@+id/imageButtonRight"
+                 android:layout_width="80dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/button_right"
+                 android:layout_toRightOf="@+id/imageButtonUp"
+                 android:layout_below="@+id/imageButtonUp"/>
+    <ImageButton android:id="@+id/imageButtonDown"
+                 android:layout_width="50dp"
+                 android:layout_height="80dp"
+                 android:src="@drawable/button_down"
+                 android:layout_below="@+id/imageButtonRight" android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
